@@ -1236,6 +1236,7 @@ namespace kit_kat
 
                 byte[] bytes = { 0x70, 0x47 };
                 Program.viewer.sendWriteMemPacket(0x0105AE4, 0x1a, bytes);
+                log("Memory Patch written!");
 
             }
             else
@@ -1243,11 +1244,7 @@ namespace kit_kat
 
                 // Activate Remote Play
                 Program.viewer.sendEmptyPacket(901, (uint)Settings.Default.ScreenPriority << 8 | (uint)Settings.Default.PriorityFactor, (uint)Settings.Default.Quality, (uint)(Settings.Default.QOSValue * 1024 * 1024 / 8));
-
-                // Start Disconnect Timeout
-                DisconnectTimeout.Enabled = true;
-                DisconnectTimeout.Start();
-
+                
                 #region Open NTRViewer
                 if (File.Exists(Path.Combine(Path.GetTempPath(), "NTRViewer.exe")))
                 {
@@ -1286,6 +1283,10 @@ namespace kit_kat
                 if (Settings.Default.BatchFile != "") { Process.Start(Settings.Default.BatchFile); }
 
             }
+
+            // Start Disconnect Timeout
+            DisconnectTimeout.Enabled = true;
+            DisconnectTimeout.Start();
 
         }
         #endregion
