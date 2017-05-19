@@ -187,36 +187,40 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.ipaddress);
-            this.panel4.Location = new System.Drawing.Point(36, 282);
+            this.panel4.Location = new System.Drawing.Point(72, 542);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(552, 35);
+            this.panel4.Size = new System.Drawing.Size(1104, 67);
             this.panel4.TabIndex = 36;
             // 
             // ipaddress
             // 
             this.ipaddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ipaddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ipaddress.Location = new System.Drawing.Point(8, 8);
+            this.ipaddress.Location = new System.Drawing.Point(16, 15);
+            this.ipaddress.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ipaddress.Name = "ipaddress";
-            this.ipaddress.Size = new System.Drawing.Size(538, 19);
+            this.ipaddress.Size = new System.Drawing.Size(1076, 37);
             this.ipaddress.TabIndex = 3;
             this.ipaddress.Text = "3DS IP Address";
             this.ipaddress.TextChanged += new System.EventHandler(this.ipaddress_TextChanged);
             // 
             // TabFixer
             // 
-            this.TabFixer.Location = new System.Drawing.Point(0, 27);
+            this.TabFixer.Location = new System.Drawing.Point(0, 52);
+            this.TabFixer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TabFixer.Name = "TabFixer";
-            this.TabFixer.Size = new System.Drawing.Size(690, 2);
+            this.TabFixer.Size = new System.Drawing.Size(1380, 4);
             this.TabFixer.TabIndex = 21;
             // 
             // controlBox1
             // 
             this.controlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.controlBox1.Font = new System.Drawing.Font("Verdana", 8F);
-            this.controlBox1.Location = new System.Drawing.Point(622, 0);
+            this.controlBox1.Location = new System.Drawing.Point(1244, 0);
+            this.controlBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.controlBox1.Name = "controlBox1";
-            this.controlBox1.Size = new System.Drawing.Size(68, 29);
+            this.controlBox1.Size = new System.Drawing.Size(136, 56);
             this.controlBox1.TabIndex = 18;
             this.controlBox1.Text = "controlBox1";
             // 
@@ -226,9 +230,10 @@
             this.BatchLinkButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BatchLinkButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BatchLinkButton.ForeColor = System.Drawing.Color.White;
-            this.BatchLinkButton.Location = new System.Drawing.Point(588, 282);
+            this.BatchLinkButton.Location = new System.Drawing.Point(1176, 542);
+            this.BatchLinkButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BatchLinkButton.Name = "BatchLinkButton";
-            this.BatchLinkButton.Size = new System.Drawing.Size(102, 35);
+            this.BatchLinkButton.Size = new System.Drawing.Size(204, 67);
             this.BatchLinkButton.TabIndex = 35;
             this.BatchLinkButton.Text = "LINK .bat";
             this.BatchLinkButton.UseVisualStyleBackColor = false;
@@ -239,8 +244,9 @@
             this.AppTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.AppTitle.ForeColor = System.Drawing.Color.White;
             this.AppTitle.Location = new System.Drawing.Point(0, 0);
+            this.AppTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.AppTitle.Name = "AppTitle";
-            this.AppTitle.Size = new System.Drawing.Size(54, 29);
+            this.AppTitle.Size = new System.Drawing.Size(108, 56);
             this.AppTitle.TabIndex = 22;
             this.AppTitle.Tag = "Overide";
             this.AppTitle.Text = "kit-kat";
@@ -259,12 +265,12 @@
             this.MainTab.Controls.Add(this.Hidden7);
             this.MainTab.Controls.Add(this.tabPage8);
             this.MainTab.ItemSize = new System.Drawing.Size(36, 38);
-            this.MainTab.Location = new System.Drawing.Point(-2, 27);
+            this.MainTab.Location = new System.Drawing.Point(-4, 52);
             this.MainTab.Margin = new System.Windows.Forms.Padding(0);
             this.MainTab.Multiline = true;
             this.MainTab.Name = "MainTab";
             this.MainTab.SelectedIndex = 0;
-            this.MainTab.Size = new System.Drawing.Size(692, 293);
+            this.MainTab.Size = new System.Drawing.Size(1384, 563);
             this.MainTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.MainTab.TabIndex = 20;
             this.MainTab.TabStop = false;
@@ -280,31 +286,33 @@
             this.CaptureCard.Controls.Add(this.separator5);
             this.CaptureCard.Controls.Add(this.ConnectButton);
             this.CaptureCard.Controls.Add(this.MemPatchButton);
-            this.CaptureCard.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.CaptureCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.CaptureCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CaptureCard.Location = new System.Drawing.Point(38, 2);
+            this.CaptureCard.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CaptureCard.Name = "CaptureCard";
-            this.CaptureCard.Padding = new System.Windows.Forms.Padding(3);
-            this.CaptureCard.Size = new System.Drawing.Size(654, 291);
+            this.CaptureCard.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CaptureCard.Size = new System.Drawing.Size(1346, 561);
             this.CaptureCard.TabIndex = 0;
             this.CaptureCard.Text = "tabPage1";
             // 
             // status1panel
             // 
             this.status1panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            this.status1panel.Location = new System.Drawing.Point(0, 251);
+            this.status1panel.Location = new System.Drawing.Point(0, 483);
             this.status1panel.Margin = new System.Windows.Forms.Padding(0);
             this.status1panel.Name = "status1panel";
-            this.status1panel.Size = new System.Drawing.Size(654, 2);
+            this.status1panel.Size = new System.Drawing.Size(1308, 4);
             this.status1panel.TabIndex = 7;
             // 
             // customLabel7
             // 
             this.customLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel7.ForeColor = System.Drawing.Color.Black;
-            this.customLabel7.Location = new System.Drawing.Point(6, 7);
+            this.customLabel7.Location = new System.Drawing.Point(12, 13);
+            this.customLabel7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel7.Name = "customLabel7";
-            this.customLabel7.Size = new System.Drawing.Size(151, 31);
+            this.customLabel7.Size = new System.Drawing.Size(302, 60);
             this.customLabel7.TabIndex = 23;
             this.customLabel7.Tag = "Left";
             this.customLabel7.Text = "Viewer\r\nStream your 3DS to PC";
@@ -313,9 +321,10 @@
             // logger
             // 
             this.logger.ForeColor = System.Drawing.Color.Black;
-            this.logger.Location = new System.Drawing.Point(0, 46);
+            this.logger.Location = new System.Drawing.Point(0, 88);
+            this.logger.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.logger.Name = "logger";
-            this.logger.Size = new System.Drawing.Size(654, 205);
+            this.logger.Size = new System.Drawing.Size(1308, 394);
             this.logger.TabIndex = 6;
             this.logger.Text = "Loading IP Address...";
             // 
@@ -325,10 +334,10 @@
             this.ConnectButtonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ConnectButtonHelp.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConnectButtonHelp.ForeColor = System.Drawing.Color.White;
-            this.ConnectButtonHelp.Location = new System.Drawing.Point(494, 6);
+            this.ConnectButtonHelp.Location = new System.Drawing.Point(988, 12);
             this.ConnectButtonHelp.Margin = new System.Windows.Forms.Padding(0);
             this.ConnectButtonHelp.Name = "ConnectButtonHelp";
-            this.ConnectButtonHelp.Size = new System.Drawing.Size(154, 31);
+            this.ConnectButtonHelp.Size = new System.Drawing.Size(308, 60);
             this.ConnectButtonHelp.TabIndex = 8;
             this.ConnectButtonHelp.Tag = "";
             this.ConnectButtonHelp.Text = "Tutorial";
@@ -337,9 +346,10 @@
             // 
             // separator5
             // 
-            this.separator5.Location = new System.Drawing.Point(0, 43);
+            this.separator5.Location = new System.Drawing.Point(0, 83);
+            this.separator5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.separator5.Name = "separator5";
-            this.separator5.Size = new System.Drawing.Size(654, 6);
+            this.separator5.Size = new System.Drawing.Size(1308, 6);
             this.separator5.TabIndex = 6;
             this.separator5.Text = "separator5";
             // 
@@ -349,9 +359,10 @@
             this.ConnectButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ConnectButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConnectButton.ForeColor = System.Drawing.Color.White;
-            this.ConnectButton.Location = new System.Drawing.Point(246, 6);
+            this.ConnectButton.Location = new System.Drawing.Point(492, 12);
+            this.ConnectButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ConnectButton.Name = "ConnectButton";
-            this.ConnectButton.Size = new System.Drawing.Size(131, 31);
+            this.ConnectButton.Size = new System.Drawing.Size(262, 60);
             this.ConnectButton.TabIndex = 4;
             this.ConnectButton.Text = "CONNECT";
             this.ConnectButton.UseVisualStyleBackColor = false;
@@ -363,10 +374,10 @@
             this.MemPatchButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MemPatchButton.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MemPatchButton.ForeColor = System.Drawing.Color.Black;
-            this.MemPatchButton.Location = new System.Drawing.Point(377, 6);
+            this.MemPatchButton.Location = new System.Drawing.Point(754, 12);
             this.MemPatchButton.Margin = new System.Windows.Forms.Padding(0);
             this.MemPatchButton.Name = "MemPatchButton";
-            this.MemPatchButton.Size = new System.Drawing.Size(31, 31);
+            this.MemPatchButton.Size = new System.Drawing.Size(62, 60);
             this.MemPatchButton.TabIndex = 5;
             this.MemPatchButton.Tag = "Alert";
             this.MemPatchButton.Text = "⚠";
@@ -384,12 +395,13 @@
             this.Push.Controls.Add(this.PushButton);
             this.Push.Controls.Add(this.separator1);
             this.Push.Controls.Add(this.status2panel);
-            this.Push.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Push.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Push.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Push.Location = new System.Drawing.Point(38, 2);
+            this.Push.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Push.Name = "Push";
-            this.Push.Padding = new System.Windows.Forms.Padding(3);
-            this.Push.Size = new System.Drawing.Size(654, 291);
+            this.Push.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Push.Size = new System.Drawing.Size(1346, 561);
             this.Push.TabIndex = 2;
             this.Push.Tag = "";
             this.Push.Text = "tabPage2";
@@ -398,9 +410,10 @@
             // 
             this.customLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel6.ForeColor = System.Drawing.Color.Black;
-            this.customLabel6.Location = new System.Drawing.Point(6, 7);
+            this.customLabel6.Location = new System.Drawing.Point(12, 13);
+            this.customLabel6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel6.Name = "customLabel6";
-            this.customLabel6.Size = new System.Drawing.Size(186, 31);
+            this.customLabel6.Size = new System.Drawing.Size(372, 60);
             this.customLabel6.TabIndex = 23;
             this.customLabel6.Tag = "Left";
             this.customLabel6.Text = "Push\r\nWireless .cia and .tik installer";
@@ -409,19 +422,21 @@
             // logger2
             // 
             this.logger2.ForeColor = System.Drawing.Color.Black;
-            this.logger2.Location = new System.Drawing.Point(0, 46);
+            this.logger2.Location = new System.Drawing.Point(0, 88);
+            this.logger2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.logger2.Name = "logger2";
-            this.logger2.Size = new System.Drawing.Size(654, 205);
+            this.logger2.Size = new System.Drawing.Size(1308, 394);
             this.logger2.TabIndex = 9;
             this.logger2.Text = "Loading IP Address...";
             // 
             // customLabel2
             // 
-            this.customLabel2.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 7F);
+            this.customLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.customLabel2.ForeColor = System.Drawing.Color.Black;
-            this.customLabel2.Location = new System.Drawing.Point(0, 275);
+            this.customLabel2.Location = new System.Drawing.Point(0, 529);
+            this.customLabel2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel2.Name = "customLabel2";
-            this.customLabel2.Size = new System.Drawing.Size(654, 13);
+            this.customLabel2.Size = new System.Drawing.Size(1308, 25);
             this.customLabel2.TabIndex = 12;
             this.customLabel2.Text = "credit: elementalcode";
             // 
@@ -431,10 +446,10 @@
             this.PushButtonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PushButtonHelp.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PushButtonHelp.ForeColor = System.Drawing.Color.White;
-            this.PushButtonHelp.Location = new System.Drawing.Point(494, 6);
+            this.PushButtonHelp.Location = new System.Drawing.Point(988, 12);
             this.PushButtonHelp.Margin = new System.Windows.Forms.Padding(0);
             this.PushButtonHelp.Name = "PushButtonHelp";
-            this.PushButtonHelp.Size = new System.Drawing.Size(154, 31);
+            this.PushButtonHelp.Size = new System.Drawing.Size(308, 60);
             this.PushButtonHelp.TabIndex = 8;
             this.PushButtonHelp.Tag = "";
             this.PushButtonHelp.Text = "Tutorial";
@@ -447,10 +462,10 @@
             this.PushFileSelectButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PushFileSelectButton.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PushFileSelectButton.ForeColor = System.Drawing.Color.White;
-            this.PushFileSelectButton.Location = new System.Drawing.Point(377, 6);
+            this.PushFileSelectButton.Location = new System.Drawing.Point(754, 12);
             this.PushFileSelectButton.Margin = new System.Windows.Forms.Padding(0);
             this.PushFileSelectButton.Name = "PushFileSelectButton";
-            this.PushFileSelectButton.Size = new System.Drawing.Size(31, 31);
+            this.PushFileSelectButton.Size = new System.Drawing.Size(62, 60);
             this.PushFileSelectButton.TabIndex = 11;
             this.PushFileSelectButton.Tag = "BrightBlue";
             this.PushFileSelectButton.Text = "+";
@@ -464,9 +479,10 @@
             this.PushButton.Enabled = false;
             this.PushButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PushButton.ForeColor = System.Drawing.Color.White;
-            this.PushButton.Location = new System.Drawing.Point(246, 6);
+            this.PushButton.Location = new System.Drawing.Point(492, 12);
+            this.PushButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PushButton.Name = "PushButton";
-            this.PushButton.Size = new System.Drawing.Size(131, 31);
+            this.PushButton.Size = new System.Drawing.Size(262, 60);
             this.PushButton.TabIndex = 7;
             this.PushButton.Text = "PUSH";
             this.PushButton.UseVisualStyleBackColor = false;
@@ -474,19 +490,20 @@
             // 
             // separator1
             // 
-            this.separator1.Location = new System.Drawing.Point(0, 43);
+            this.separator1.Location = new System.Drawing.Point(0, 83);
+            this.separator1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.separator1.Name = "separator1";
-            this.separator1.Size = new System.Drawing.Size(654, 6);
+            this.separator1.Size = new System.Drawing.Size(1308, 6);
             this.separator1.TabIndex = 6;
             this.separator1.Text = "separator1";
             // 
             // status2panel
             // 
             this.status2panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            this.status2panel.Location = new System.Drawing.Point(0, 251);
+            this.status2panel.Location = new System.Drawing.Point(0, 483);
             this.status2panel.Margin = new System.Windows.Forms.Padding(0);
             this.status2panel.Name = "status2panel";
-            this.status2panel.Size = new System.Drawing.Size(654, 2);
+            this.status2panel.Size = new System.Drawing.Size(1308, 4);
             this.status2panel.TabIndex = 7;
             // 
             // IR
@@ -500,12 +517,13 @@
             this.IR.Controls.Add(this.IRHelp);
             this.IR.Controls.Add(this.separator4);
             this.IR.Controls.Add(this.customLabel4);
-            this.IR.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.IR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.IR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.IR.Location = new System.Drawing.Point(38, 2);
+            this.IR.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.IR.Name = "IR";
-            this.IR.Padding = new System.Windows.Forms.Padding(3);
-            this.IR.Size = new System.Drawing.Size(654, 291);
+            this.IR.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.IR.Size = new System.Drawing.Size(1346, 561);
             this.IR.TabIndex = 3;
             this.IR.Tag = "";
             this.IR.Text = "tabPage3";
@@ -514,10 +532,10 @@
             // 
             this.customLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel5.ForeColor = System.Drawing.Color.Black;
-            this.customLabel5.Location = new System.Drawing.Point(498, 45);
+            this.customLabel5.Location = new System.Drawing.Point(996, 87);
             this.customLabel5.Margin = new System.Windows.Forms.Padding(0);
             this.customLabel5.Name = "customLabel5";
-            this.customLabel5.Size = new System.Drawing.Size(145, 195);
+            this.customLabel5.Size = new System.Drawing.Size(290, 375);
             this.customLabel5.TabIndex = 26;
             this.customLabel5.Text = "Usage:\r\nF1 - IP Address\r\nF2 - Keyboard Controls\r\nF3 - Gamepad Controls\r\nF4 - Debu" +
     "g Mode\r\n\r\nMake sure you enter the IP Address before trying to use touch.";
@@ -525,28 +543,30 @@
             // status3panel
             // 
             this.status3panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            this.status3panel.Location = new System.Drawing.Point(0, 251);
+            this.status3panel.Location = new System.Drawing.Point(0, 483);
+            this.status3panel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.status3panel.Name = "status3panel";
-            this.status3panel.Size = new System.Drawing.Size(654, 2);
+            this.status3panel.Size = new System.Drawing.Size(1308, 4);
             this.status3panel.TabIndex = 7;
             // 
             // customLabel3
             // 
-            this.customLabel3.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 7F);
+            this.customLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.customLabel3.ForeColor = System.Drawing.Color.Black;
-            this.customLabel3.Location = new System.Drawing.Point(0, 277);
+            this.customLabel3.Location = new System.Drawing.Point(0, 533);
+            this.customLabel3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel3.Name = "customLabel3";
-            this.customLabel3.Size = new System.Drawing.Size(654, 14);
+            this.customLabel3.Size = new System.Drawing.Size(1308, 27);
             this.customLabel3.TabIndex = 24;
             this.customLabel3.Text = "credit: kazo";
             // 
             // pctSurface
             // 
             this.pctSurface.BackColor = System.Drawing.Color.Gainsboro;
-            this.pctSurface.Location = new System.Drawing.Point(167, 6);
+            this.pctSurface.Location = new System.Drawing.Point(334, 12);
             this.pctSurface.Margin = new System.Windows.Forms.Padding(0);
             this.pctSurface.Name = "pctSurface";
-            this.pctSurface.Size = new System.Drawing.Size(320, 240);
+            this.pctSurface.Size = new System.Drawing.Size(640, 462);
             this.pctSurface.TabIndex = 10;
             this.pctSurface.TabStop = false;
             this.pctSurface.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pctSurface_MouseDown);
@@ -557,9 +577,10 @@
             // 
             this.customLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel8.ForeColor = System.Drawing.Color.Black;
-            this.customLabel8.Location = new System.Drawing.Point(6, 7);
+            this.customLabel8.Location = new System.Drawing.Point(12, 13);
+            this.customLabel8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel8.Name = "customLabel8";
-            this.customLabel8.Size = new System.Drawing.Size(158, 31);
+            this.customLabel8.Size = new System.Drawing.Size(316, 60);
             this.customLabel8.TabIndex = 23;
             this.customLabel8.Tag = "Left";
             this.customLabel8.Text = "IR\r\n3DS Input Redirector";
@@ -571,10 +592,10 @@
             this.IRHelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IRHelp.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IRHelp.ForeColor = System.Drawing.Color.White;
-            this.IRHelp.Location = new System.Drawing.Point(494, 6);
+            this.IRHelp.Location = new System.Drawing.Point(988, 12);
             this.IRHelp.Margin = new System.Windows.Forms.Padding(0);
             this.IRHelp.Name = "IRHelp";
-            this.IRHelp.Size = new System.Drawing.Size(154, 31);
+            this.IRHelp.Size = new System.Drawing.Size(308, 60);
             this.IRHelp.TabIndex = 8;
             this.IRHelp.Tag = "";
             this.IRHelp.Text = "Tutorial";
@@ -583,9 +604,10 @@
             // 
             // separator4
             // 
-            this.separator4.Location = new System.Drawing.Point(0, 43);
+            this.separator4.Location = new System.Drawing.Point(0, 83);
+            this.separator4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.separator4.Name = "separator4";
-            this.separator4.Size = new System.Drawing.Size(654, 6);
+            this.separator4.Size = new System.Drawing.Size(1308, 6);
             this.separator4.TabIndex = 6;
             this.separator4.Text = "separator4";
             // 
@@ -593,10 +615,10 @@
             // 
             this.customLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel4.ForeColor = System.Drawing.Color.Black;
-            this.customLabel4.Location = new System.Drawing.Point(6, 45);
+            this.customLabel4.Location = new System.Drawing.Point(12, 87);
             this.customLabel4.Margin = new System.Windows.Forms.Padding(0);
             this.customLabel4.Name = "customLabel4";
-            this.customLabel4.Size = new System.Drawing.Size(154, 195);
+            this.customLabel4.Size = new System.Drawing.Size(308, 375);
             this.customLabel4.TabIndex = 25;
             this.customLabel4.Text = "Installation:\r\nClick here to download the Input Redirection CIA file and install " +
     "it using FBI.";
@@ -612,11 +634,12 @@
             this.RomKit.Controls.Add(this.status4panel);
             this.RomKit.Controls.Add(this.RK_HelpButton);
             this.RomKit.Controls.Add(this.separator3);
-            this.RomKit.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.RomKit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.RomKit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RomKit.Location = new System.Drawing.Point(38, 2);
+            this.RomKit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.RomKit.Name = "RomKit";
-            this.RomKit.Size = new System.Drawing.Size(654, 291);
+            this.RomKit.Size = new System.Drawing.Size(1346, 561);
             this.RomKit.TabIndex = 9;
             this.RomKit.Tag = "";
             this.RomKit.Text = "Rom-Kit";
@@ -627,9 +650,10 @@
             this.RK_ExtractButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RK_ExtractButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RK_ExtractButton.ForeColor = System.Drawing.Color.White;
-            this.RK_ExtractButton.Location = new System.Drawing.Point(6, 50);
+            this.RK_ExtractButton.Location = new System.Drawing.Point(12, 96);
+            this.RK_ExtractButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.RK_ExtractButton.Name = "RK_ExtractButton";
-            this.RK_ExtractButton.Size = new System.Drawing.Size(318, 31);
+            this.RK_ExtractButton.Size = new System.Drawing.Size(636, 60);
             this.RK_ExtractButton.TabIndex = 7;
             this.RK_ExtractButton.Text = "Extract";
             this.RK_ExtractButton.UseVisualStyleBackColor = false;
@@ -639,9 +663,10 @@
             // 
             this.customLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel11.ForeColor = System.Drawing.Color.Black;
-            this.customLabel11.Location = new System.Drawing.Point(6, 7);
+            this.customLabel11.Location = new System.Drawing.Point(12, 13);
+            this.customLabel11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel11.Name = "customLabel11";
-            this.customLabel11.Size = new System.Drawing.Size(227, 31);
+            this.customLabel11.Size = new System.Drawing.Size(454, 60);
             this.customLabel11.TabIndex = 23;
             this.customLabel11.Tag = "Left";
             this.customLabel11.Text = "Rom-Kit\r\n.3ds and .cia extracter and rebuilder";
@@ -653,9 +678,10 @@
             this.RK_RebuildButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RK_RebuildButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RK_RebuildButton.ForeColor = System.Drawing.Color.White;
-            this.RK_RebuildButton.Location = new System.Drawing.Point(330, 50);
+            this.RK_RebuildButton.Location = new System.Drawing.Point(660, 96);
+            this.RK_RebuildButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.RK_RebuildButton.Name = "RK_RebuildButton";
-            this.RK_RebuildButton.Size = new System.Drawing.Size(318, 31);
+            this.RK_RebuildButton.Size = new System.Drawing.Size(636, 60);
             this.RK_RebuildButton.TabIndex = 24;
             this.RK_RebuildButton.Text = "Rebuild";
             this.RK_RebuildButton.UseVisualStyleBackColor = false;
@@ -664,19 +690,20 @@
             // logger4
             // 
             this.logger4.ForeColor = System.Drawing.Color.Black;
-            this.logger4.Location = new System.Drawing.Point(0, 81);
+            this.logger4.Location = new System.Drawing.Point(0, 156);
+            this.logger4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.logger4.Name = "logger4";
-            this.logger4.Size = new System.Drawing.Size(654, 168);
+            this.logger4.Size = new System.Drawing.Size(1308, 323);
             this.logger4.TabIndex = 9;
             this.logger4.Text = "Idle...";
             // 
             // status4panel
             // 
             this.status4panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            this.status4panel.Location = new System.Drawing.Point(0, 251);
+            this.status4panel.Location = new System.Drawing.Point(0, 483);
             this.status4panel.Margin = new System.Windows.Forms.Padding(0);
             this.status4panel.Name = "status4panel";
-            this.status4panel.Size = new System.Drawing.Size(654, 2);
+            this.status4panel.Size = new System.Drawing.Size(1308, 4);
             this.status4panel.TabIndex = 7;
             // 
             // RK_HelpButton
@@ -685,10 +712,10 @@
             this.RK_HelpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RK_HelpButton.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RK_HelpButton.ForeColor = System.Drawing.Color.White;
-            this.RK_HelpButton.Location = new System.Drawing.Point(494, 6);
+            this.RK_HelpButton.Location = new System.Drawing.Point(988, 12);
             this.RK_HelpButton.Margin = new System.Windows.Forms.Padding(0);
             this.RK_HelpButton.Name = "RK_HelpButton";
-            this.RK_HelpButton.Size = new System.Drawing.Size(154, 31);
+            this.RK_HelpButton.Size = new System.Drawing.Size(308, 60);
             this.RK_HelpButton.TabIndex = 8;
             this.RK_HelpButton.Tag = "";
             this.RK_HelpButton.Text = "Tutorial";
@@ -697,21 +724,23 @@
             // 
             // separator3
             // 
-            this.separator3.Location = new System.Drawing.Point(0, 43);
+            this.separator3.Location = new System.Drawing.Point(0, 83);
+            this.separator3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.separator3.Name = "separator3";
-            this.separator3.Size = new System.Drawing.Size(654, 6);
+            this.separator3.Size = new System.Drawing.Size(1308, 6);
             this.separator3.TabIndex = 6;
             this.separator3.Text = "separator3";
             // 
             // Hidden5
             // 
             this.Hidden5.BackColor = System.Drawing.Color.White;
-            this.Hidden5.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Hidden5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Hidden5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Hidden5.Location = new System.Drawing.Point(38, 2);
+            this.Hidden5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Hidden5.Name = "Hidden5";
-            this.Hidden5.Padding = new System.Windows.Forms.Padding(3);
-            this.Hidden5.Size = new System.Drawing.Size(654, 291);
+            this.Hidden5.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Hidden5.Size = new System.Drawing.Size(1346, 561);
             this.Hidden5.TabIndex = 5;
             this.Hidden5.Tag = "Hidden";
             this.Hidden5.Text = "tabPage6";
@@ -719,12 +748,13 @@
             // Hidden6
             // 
             this.Hidden6.BackColor = System.Drawing.Color.White;
-            this.Hidden6.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Hidden6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Hidden6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Hidden6.Location = new System.Drawing.Point(38, 2);
+            this.Hidden6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Hidden6.Name = "Hidden6";
-            this.Hidden6.Padding = new System.Windows.Forms.Padding(3);
-            this.Hidden6.Size = new System.Drawing.Size(654, 291);
+            this.Hidden6.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Hidden6.Size = new System.Drawing.Size(1346, 561);
             this.Hidden6.TabIndex = 6;
             this.Hidden6.Tag = "Hidden";
             this.Hidden6.Text = "tabPage7";
@@ -732,11 +762,12 @@
             // Hidden7
             // 
             this.Hidden7.BackColor = System.Drawing.Color.White;
-            this.Hidden7.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Hidden7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Hidden7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Hidden7.Location = new System.Drawing.Point(38, 2);
+            this.Hidden7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Hidden7.Name = "Hidden7";
-            this.Hidden7.Size = new System.Drawing.Size(654, 291);
+            this.Hidden7.Size = new System.Drawing.Size(1346, 561);
             this.Hidden7.TabIndex = 8;
             this.Hidden7.Tag = "Hidden";
             this.Hidden7.Text = "Hidden7";
@@ -745,12 +776,13 @@
             // 
             this.tabPage8.BackColor = System.Drawing.Color.White;
             this.tabPage8.Controls.Add(this.SettingsWindow);
-            this.tabPage8.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.tabPage8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tabPage8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.tabPage8.Location = new System.Drawing.Point(38, 2);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(654, 291);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage8.Size = new System.Drawing.Size(1346, 561);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Tag = "";
             this.tabPage8.Text = "tabPage8";
@@ -762,7 +794,7 @@
             this.SettingsWindow.Location = new System.Drawing.Point(0, 0);
             this.SettingsWindow.Margin = new System.Windows.Forms.Padding(0);
             this.SettingsWindow.Name = "SettingsWindow";
-            this.SettingsWindow.Size = new System.Drawing.Size(654, 288);
+            this.SettingsWindow.Size = new System.Drawing.Size(1308, 554);
             this.SettingsWindow.TabIndex = 1;
             // 
             // SettingsTab
@@ -776,11 +808,12 @@
             this.SettingsTab.Controls.Add(this.Hidden2);
             this.SettingsTab.Controls.Add(this.Theme);
             this.SettingsTab.ItemSize = new System.Drawing.Size(36, 127);
-            this.SettingsTab.Location = new System.Drawing.Point(-2, -2);
+            this.SettingsTab.Location = new System.Drawing.Point(-4, -4);
+            this.SettingsTab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.SettingsTab.Multiline = true;
             this.SettingsTab.Name = "SettingsTab";
             this.SettingsTab.SelectedIndex = 0;
-            this.SettingsTab.Size = new System.Drawing.Size(656, 290);
+            this.SettingsTab.Size = new System.Drawing.Size(1312, 558);
             this.SettingsTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.SettingsTab.TabIndex = 0;
             this.SettingsTab.Tag = "TextOnly";
@@ -807,12 +840,13 @@
             this.Viewer_Settings.Controls.Add(this.customLabel18);
             this.Viewer_Settings.Controls.Add(this.customLabel19);
             this.Viewer_Settings.Controls.Add(this.customLabel23);
-            this.Viewer_Settings.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Viewer_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Viewer_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Viewer_Settings.Location = new System.Drawing.Point(127, 2);
+            this.Viewer_Settings.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Viewer_Settings.Name = "Viewer_Settings";
-            this.Viewer_Settings.Padding = new System.Windows.Forms.Padding(3);
-            this.Viewer_Settings.Size = new System.Drawing.Size(529, 288);
+            this.Viewer_Settings.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Viewer_Settings.Size = new System.Drawing.Size(1185, 556);
             this.Viewer_Settings.TabIndex = 1;
             this.Viewer_Settings.Text = "Viewer";
             // 
@@ -821,9 +855,10 @@
             this.customLabel22.AutoSize = true;
             this.customLabel22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel22.ForeColor = System.Drawing.Color.White;
-            this.customLabel22.Location = new System.Drawing.Point(10, 194);
+            this.customLabel22.Location = new System.Drawing.Point(20, 373);
+            this.customLabel22.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel22.Name = "customLabel22";
-            this.customLabel22.Size = new System.Drawing.Size(159, 17);
+            this.customLabel22.Size = new System.Drawing.Size(303, 31);
             this.customLabel22.TabIndex = 84;
             this.customLabel22.Tag = "Left";
             this.customLabel22.Text = "Quality of Service Value";
@@ -834,9 +869,10 @@
             this.customLabel21.AutoSize = true;
             this.customLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel21.ForeColor = System.Drawing.Color.White;
-            this.customLabel21.Location = new System.Drawing.Point(10, 170);
+            this.customLabel21.Location = new System.Drawing.Point(20, 327);
+            this.customLabel21.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel21.Name = "customLabel21";
-            this.customLabel21.Size = new System.Drawing.Size(96, 17);
+            this.customLabel21.Size = new System.Drawing.Size(184, 31);
             this.customLabel21.TabIndex = 83;
             this.customLabel21.Tag = "Left";
             this.customLabel21.Text = "Priority Factor";
@@ -847,9 +883,10 @@
             this.customLabel20.AutoSize = true;
             this.customLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel20.ForeColor = System.Drawing.Color.White;
-            this.customLabel20.Location = new System.Drawing.Point(10, 146);
+            this.customLabel20.Location = new System.Drawing.Point(20, 281);
+            this.customLabel20.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel20.Name = "customLabel20";
-            this.customLabel20.Size = new System.Drawing.Size(172, 17);
+            this.customLabel20.Size = new System.Drawing.Size(336, 31);
             this.customLabel20.TabIndex = 82;
             this.customLabel20.Tag = "Left";
             this.customLabel20.Text = "Show NTRViewer Console";
@@ -860,9 +897,10 @@
             this.customLabel16.AutoSize = true;
             this.customLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel16.ForeColor = System.Drawing.Color.White;
-            this.customLabel16.Location = new System.Drawing.Point(10, 41);
+            this.customLabel16.Location = new System.Drawing.Point(20, 79);
+            this.customLabel16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel16.Name = "customLabel16";
-            this.customLabel16.Size = new System.Drawing.Size(214, 17);
+            this.customLabel16.Size = new System.Drawing.Size(405, 31);
             this.customLabel16.TabIndex = 78;
             this.customLabel16.Tag = "Left";
             this.customLabel16.Text = "Top Screen Scale (0 = Disabled)";
@@ -873,9 +911,10 @@
             this.customLabel15.AutoSize = true;
             this.customLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel15.ForeColor = System.Drawing.Color.White;
-            this.customLabel15.Location = new System.Drawing.Point(10, 18);
+            this.customLabel15.Location = new System.Drawing.Point(20, 35);
+            this.customLabel15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel15.Name = "customLabel15";
-            this.customLabel15.Size = new System.Drawing.Size(165, 17);
+            this.customLabel15.Size = new System.Drawing.Size(314, 31);
             this.customLabel15.TabIndex = 37;
             this.customLabel15.Tag = "Left";
             this.customLabel15.Text = "Auto-Connect on Launch";
@@ -883,9 +922,10 @@
             // 
             // separator2
             // 
-            this.separator2.Location = new System.Drawing.Point(13, 138);
+            this.separator2.Location = new System.Drawing.Point(26, 265);
+            this.separator2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.separator2.Name = "separator2";
-            this.separator2.Size = new System.Drawing.Size(508, 6);
+            this.separator2.Size = new System.Drawing.Size(1016, 6);
             this.separator2.TabIndex = 77;
             this.separator2.Text = "separator2";
             // 
@@ -893,9 +933,10 @@
             // 
             this.ShowConsole.AutoSize = true;
             this.ShowConsole.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ShowConsole.Location = new System.Drawing.Point(508, 148);
+            this.ShowConsole.Location = new System.Drawing.Point(1016, 285);
+            this.ShowConsole.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ShowConsole.Name = "ShowConsole";
-            this.ShowConsole.Size = new System.Drawing.Size(15, 14);
+            this.ShowConsole.Size = new System.Drawing.Size(28, 27);
             this.ShowConsole.TabIndex = 76;
             this.ShowConsole.UseVisualStyleBackColor = true;
             this.ShowConsole.CheckedChanged += new System.EventHandler(this.ShowConsole_CheckedChanged);
@@ -903,9 +944,10 @@
             // AutoConnect
             // 
             this.AutoConnect.AutoSize = true;
-            this.AutoConnect.Location = new System.Drawing.Point(508, 19);
+            this.AutoConnect.Location = new System.Drawing.Point(1016, 37);
+            this.AutoConnect.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.AutoConnect.Name = "AutoConnect";
-            this.AutoConnect.Size = new System.Drawing.Size(15, 14);
+            this.AutoConnect.Size = new System.Drawing.Size(28, 27);
             this.AutoConnect.TabIndex = 71;
             this.AutoConnect.UseVisualStyleBackColor = true;
             this.AutoConnect.CheckedChanged += new System.EventHandler(this.AutoConnect_CheckedChanged);
@@ -913,14 +955,15 @@
             // Quality
             // 
             this.Quality.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Quality.Location = new System.Drawing.Point(473, 111);
+            this.Quality.Location = new System.Drawing.Point(946, 213);
+            this.Quality.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Quality.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.Quality.Name = "Quality";
-            this.Quality.Size = new System.Drawing.Size(48, 21);
+            this.Quality.Size = new System.Drawing.Size(96, 35);
             this.Quality.TabIndex = 68;
             this.Quality.Value = new decimal(new int[] {
             90,
@@ -932,14 +975,15 @@
             // ViewMode
             // 
             this.ViewMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ViewMode.Location = new System.Drawing.Point(473, 87);
+            this.ViewMode.Location = new System.Drawing.Point(946, 167);
+            this.ViewMode.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ViewMode.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.ViewMode.Name = "ViewMode";
-            this.ViewMode.Size = new System.Drawing.Size(48, 21);
+            this.ViewMode.Size = new System.Drawing.Size(96, 35);
             this.ViewMode.TabIndex = 60;
             this.ViewMode.Value = new decimal(new int[] {
             1,
@@ -951,14 +995,15 @@
             // QOSValue
             // 
             this.QOSValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.QOSValue.Location = new System.Drawing.Point(473, 192);
+            this.QOSValue.Location = new System.Drawing.Point(946, 369);
+            this.QOSValue.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.QOSValue.Maximum = new decimal(new int[] {
             101,
             0,
             0,
             0});
             this.QOSValue.Name = "QOSValue";
-            this.QOSValue.Size = new System.Drawing.Size(48, 21);
+            this.QOSValue.Size = new System.Drawing.Size(96, 35);
             this.QOSValue.TabIndex = 65;
             this.QOSValue.Value = new decimal(new int[] {
             101,
@@ -970,14 +1015,15 @@
             // PriorityFactor
             // 
             this.PriorityFactor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.PriorityFactor.Location = new System.Drawing.Point(473, 168);
+            this.PriorityFactor.Location = new System.Drawing.Point(946, 323);
+            this.PriorityFactor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PriorityFactor.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
             this.PriorityFactor.Name = "PriorityFactor";
-            this.PriorityFactor.Size = new System.Drawing.Size(48, 21);
+            this.PriorityFactor.Size = new System.Drawing.Size(96, 35);
             this.PriorityFactor.TabIndex = 64;
             this.PriorityFactor.Value = new decimal(new int[] {
             5,
@@ -989,9 +1035,10 @@
             // tScale
             // 
             this.tScale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tScale.Location = new System.Drawing.Point(473, 38);
+            this.tScale.Location = new System.Drawing.Point(946, 73);
+            this.tScale.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tScale.Name = "tScale";
-            this.tScale.Size = new System.Drawing.Size(48, 21);
+            this.tScale.Size = new System.Drawing.Size(92, 35);
             this.tScale.TabIndex = 74;
             this.tScale.Text = "1.0";
             this.tScale.TextChanged += new System.EventHandler(this.tScale_TextChanged);
@@ -999,9 +1046,10 @@
             // bScale
             // 
             this.bScale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.bScale.Location = new System.Drawing.Point(473, 62);
+            this.bScale.Location = new System.Drawing.Point(946, 119);
+            this.bScale.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bScale.Name = "bScale";
-            this.bScale.Size = new System.Drawing.Size(48, 21);
+            this.bScale.Size = new System.Drawing.Size(92, 35);
             this.bScale.TabIndex = 72;
             this.bScale.Text = "1.0";
             this.bScale.TextChanged += new System.EventHandler(this.bScale_TextChanged);
@@ -1009,14 +1057,15 @@
             // ScreenPriority
             // 
             this.ScreenPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ScreenPriority.Location = new System.Drawing.Point(473, 216);
+            this.ScreenPriority.Location = new System.Drawing.Point(946, 415);
+            this.ScreenPriority.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ScreenPriority.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.ScreenPriority.Name = "ScreenPriority";
-            this.ScreenPriority.Size = new System.Drawing.Size(48, 21);
+            this.ScreenPriority.Size = new System.Drawing.Size(96, 35);
             this.ScreenPriority.TabIndex = 66;
             this.ScreenPriority.Value = new decimal(new int[] {
             1,
@@ -1030,9 +1079,10 @@
             this.customLabel17.AutoSize = true;
             this.customLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel17.ForeColor = System.Drawing.Color.White;
-            this.customLabel17.Location = new System.Drawing.Point(10, 65);
+            this.customLabel17.Location = new System.Drawing.Point(20, 125);
+            this.customLabel17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel17.Name = "customLabel17";
-            this.customLabel17.Size = new System.Drawing.Size(233, 17);
+            this.customLabel17.Size = new System.Drawing.Size(444, 31);
             this.customLabel17.TabIndex = 79;
             this.customLabel17.Tag = "Left";
             this.customLabel17.Text = "Bottom Screen Scale (0 = Disabled)";
@@ -1043,9 +1093,10 @@
             this.customLabel18.AutoSize = true;
             this.customLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel18.ForeColor = System.Drawing.Color.White;
-            this.customLabel18.Location = new System.Drawing.Point(10, 89);
+            this.customLabel18.Location = new System.Drawing.Point(20, 171);
+            this.customLabel18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel18.Name = "customLabel18";
-            this.customLabel18.Size = new System.Drawing.Size(257, 17);
+            this.customLabel18.Size = new System.Drawing.Size(491, 31);
             this.customLabel18.TabIndex = 80;
             this.customLabel18.Tag = "Left";
             this.customLabel18.Text = "View Mode (1 = Vertical, 0 = Horizontal)";
@@ -1056,9 +1107,10 @@
             this.customLabel19.AutoSize = true;
             this.customLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel19.ForeColor = System.Drawing.Color.White;
-            this.customLabel19.Location = new System.Drawing.Point(10, 113);
+            this.customLabel19.Location = new System.Drawing.Point(20, 217);
+            this.customLabel19.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel19.Name = "customLabel19";
-            this.customLabel19.Size = new System.Drawing.Size(52, 17);
+            this.customLabel19.Size = new System.Drawing.Size(99, 31);
             this.customLabel19.TabIndex = 81;
             this.customLabel19.Tag = "Left";
             this.customLabel19.Text = "Quality";
@@ -1069,9 +1121,10 @@
             this.customLabel23.AutoSize = true;
             this.customLabel23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel23.ForeColor = System.Drawing.Color.White;
-            this.customLabel23.Location = new System.Drawing.Point(10, 218);
+            this.customLabel23.Location = new System.Drawing.Point(20, 419);
+            this.customLabel23.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel23.Name = "customLabel23";
-            this.customLabel23.Size = new System.Drawing.Size(240, 17);
+            this.customLabel23.Size = new System.Drawing.Size(455, 31);
             this.customLabel23.TabIndex = 85;
             this.customLabel23.Tag = "Left";
             this.customLabel23.Text = "Screen Priority (1 = Top, 0 = Bottom)";
@@ -1081,12 +1134,13 @@
             // 
             this.Push_Settings.BackColor = System.Drawing.Color.White;
             this.Push_Settings.Controls.Add(this.customLabel9);
-            this.Push_Settings.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Push_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Push_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Push_Settings.Location = new System.Drawing.Point(127, 2);
+            this.Push_Settings.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Push_Settings.Name = "Push_Settings";
-            this.Push_Settings.Padding = new System.Windows.Forms.Padding(3);
-            this.Push_Settings.Size = new System.Drawing.Size(529, 288);
+            this.Push_Settings.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Push_Settings.Size = new System.Drawing.Size(1185, 556);
             this.Push_Settings.TabIndex = 2;
             this.Push_Settings.Tag = "Hidden";
             this.Push_Settings.Text = "Push";
@@ -1096,8 +1150,9 @@
             this.customLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel9.ForeColor = System.Drawing.Color.Silver;
             this.customLabel9.Location = new System.Drawing.Point(0, 0);
+            this.customLabel9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel9.Name = "customLabel9";
-            this.customLabel9.Size = new System.Drawing.Size(529, 253);
+            this.customLabel9.Size = new System.Drawing.Size(1058, 487);
             this.customLabel9.TabIndex = 37;
             this.customLabel9.Text = "No configurable settings...";
             this.customLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1106,11 +1161,12 @@
             // 
             this.IR_Settings.BackColor = System.Drawing.Color.White;
             this.IR_Settings.Controls.Add(this.customLabel10);
-            this.IR_Settings.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.IR_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.IR_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.IR_Settings.Location = new System.Drawing.Point(127, 2);
+            this.IR_Settings.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.IR_Settings.Name = "IR_Settings";
-            this.IR_Settings.Size = new System.Drawing.Size(529, 288);
+            this.IR_Settings.Size = new System.Drawing.Size(1185, 556);
             this.IR_Settings.TabIndex = 3;
             this.IR_Settings.Tag = "Hidden";
             this.IR_Settings.Text = "Input Redirecter";
@@ -1120,8 +1176,9 @@
             this.customLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel10.ForeColor = System.Drawing.Color.Silver;
             this.customLabel10.Location = new System.Drawing.Point(0, 0);
+            this.customLabel10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel10.Name = "customLabel10";
-            this.customLabel10.Size = new System.Drawing.Size(529, 253);
+            this.customLabel10.Size = new System.Drawing.Size(1058, 487);
             this.customLabel10.TabIndex = 38;
             this.customLabel10.Text = "No configurable settings...";
             this.customLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1130,12 +1187,13 @@
             // 
             this.RomKit_Settings.BackColor = System.Drawing.Color.White;
             this.RomKit_Settings.Controls.Add(this.customLabel1);
-            this.RomKit_Settings.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.RomKit_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.RomKit_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RomKit_Settings.Location = new System.Drawing.Point(127, 2);
+            this.RomKit_Settings.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.RomKit_Settings.Name = "RomKit_Settings";
-            this.RomKit_Settings.Padding = new System.Windows.Forms.Padding(3);
-            this.RomKit_Settings.Size = new System.Drawing.Size(529, 288);
+            this.RomKit_Settings.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.RomKit_Settings.Size = new System.Drawing.Size(1185, 556);
             this.RomKit_Settings.TabIndex = 4;
             this.RomKit_Settings.Tag = "Hidden";
             this.RomKit_Settings.Text = "Rom-Kit";
@@ -1145,8 +1203,9 @@
             this.customLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel1.ForeColor = System.Drawing.Color.Silver;
             this.customLabel1.Location = new System.Drawing.Point(0, 0);
+            this.customLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel1.Name = "customLabel1";
-            this.customLabel1.Size = new System.Drawing.Size(529, 253);
+            this.customLabel1.Size = new System.Drawing.Size(1058, 487);
             this.customLabel1.TabIndex = 39;
             this.customLabel1.Text = "No configurable settings...";
             this.customLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1154,12 +1213,13 @@
             // Hidden1
             // 
             this.Hidden1.BackColor = System.Drawing.Color.White;
-            this.Hidden1.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Hidden1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Hidden1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Hidden1.Location = new System.Drawing.Point(127, 2);
+            this.Hidden1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Hidden1.Name = "Hidden1";
-            this.Hidden1.Padding = new System.Windows.Forms.Padding(3);
-            this.Hidden1.Size = new System.Drawing.Size(529, 288);
+            this.Hidden1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Hidden1.Size = new System.Drawing.Size(1185, 556);
             this.Hidden1.TabIndex = 5;
             this.Hidden1.Tag = "Hidden";
             this.Hidden1.Text = "Hidden1";
@@ -1167,12 +1227,13 @@
             // Hidden2
             // 
             this.Hidden2.BackColor = System.Drawing.Color.White;
-            this.Hidden2.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Hidden2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Hidden2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Hidden2.Location = new System.Drawing.Point(127, 2);
+            this.Hidden2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Hidden2.Name = "Hidden2";
-            this.Hidden2.Padding = new System.Windows.Forms.Padding(3);
-            this.Hidden2.Size = new System.Drawing.Size(529, 288);
+            this.Hidden2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Hidden2.Size = new System.Drawing.Size(1185, 556);
             this.Hidden2.TabIndex = 6;
             this.Hidden2.Tag = "Hidden";
             this.Hidden2.Text = "Hidden2";
@@ -1187,20 +1248,22 @@
             this.Theme.Controls.Add(this.panel13);
             this.Theme.Controls.Add(this.panel5);
             this.Theme.Controls.Add(this.panel16);
-            this.Theme.Font = new System.Drawing.Font("Kozuka Gothic Pro B", 9F);
+            this.Theme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Theme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Theme.Location = new System.Drawing.Point(127, 2);
+            this.Theme.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Theme.Name = "Theme";
-            this.Theme.Padding = new System.Windows.Forms.Padding(3);
-            this.Theme.Size = new System.Drawing.Size(529, 288);
+            this.Theme.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Theme.Size = new System.Drawing.Size(1185, 556);
             this.Theme.TabIndex = 7;
             this.Theme.Text = "Theme";
             // 
             // separator10
             // 
-            this.separator10.Location = new System.Drawing.Point(318, 162);
+            this.separator10.Location = new System.Drawing.Point(636, 312);
+            this.separator10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.separator10.Name = "separator10";
-            this.separator10.Size = new System.Drawing.Size(162, 6);
+            this.separator10.Size = new System.Drawing.Size(324, 6);
             this.separator10.TabIndex = 46;
             this.separator10.Text = "separator10";
             // 
@@ -1208,9 +1271,10 @@
             // 
             this.customLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customLabel25.ForeColor = System.Drawing.Color.White;
-            this.customLabel25.Location = new System.Drawing.Point(281, 118);
+            this.customLabel25.Location = new System.Drawing.Point(562, 227);
+            this.customLabel25.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel25.Name = "customLabel25";
-            this.customLabel25.Size = new System.Drawing.Size(235, 125);
+            this.customLabel25.Size = new System.Drawing.Size(470, 240);
             this.customLabel25.TabIndex = 37;
             this.customLabel25.Tag = "";
             this.customLabel25.Text = "Custom Theme Editor\r\n\r\nClick the area you wish to\r\nchange the color of.\r\nIt\'s tha" +
@@ -1224,9 +1288,10 @@
             this.WindowColorPanel.Controls.Add(this.customLabel24);
             this.WindowColorPanel.Controls.Add(this.WindowColorPanel2);
             this.WindowColorPanel.Controls.Add(this.TabBackgroundColorPanel);
-            this.WindowColorPanel.Location = new System.Drawing.Point(12, 118);
+            this.WindowColorPanel.Location = new System.Drawing.Point(24, 227);
+            this.WindowColorPanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.WindowColorPanel.Name = "WindowColorPanel";
-            this.WindowColorPanel.Size = new System.Drawing.Size(260, 125);
+            this.WindowColorPanel.Size = new System.Drawing.Size(518, 239);
             this.WindowColorPanel.TabIndex = 45;
             this.WindowColorPanel.Click += new System.EventHandler(this.panelColor_Click);
             // 
@@ -1235,8 +1300,9 @@
             this.customLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.customLabel24.ForeColor = System.Drawing.Color.White;
             this.customLabel24.Location = new System.Drawing.Point(0, 0);
+            this.customLabel24.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel24.Name = "customLabel24";
-            this.customLabel24.Size = new System.Drawing.Size(33, 14);
+            this.customLabel24.Size = new System.Drawing.Size(66, 27);
             this.customLabel24.TabIndex = 37;
             this.customLabel24.Tag = "Overide";
             this.customLabel24.Text = "kit-kat";
@@ -1245,9 +1311,10 @@
             // WindowColorPanel2
             // 
             this.WindowColorPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(102)))), ((int)(((byte)(120)))));
-            this.WindowColorPanel2.Location = new System.Drawing.Point(0, 14);
+            this.WindowColorPanel2.Location = new System.Drawing.Point(0, 27);
+            this.WindowColorPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.WindowColorPanel2.Name = "WindowColorPanel2";
-            this.WindowColorPanel2.Size = new System.Drawing.Size(14, 110);
+            this.WindowColorPanel2.Size = new System.Drawing.Size(28, 212);
             this.WindowColorPanel2.TabIndex = 47;
             this.WindowColorPanel2.Click += new System.EventHandler(this.WindowColorPanel2_Click);
             // 
@@ -1256,9 +1323,10 @@
             this.TabBackgroundColorPanel.BackColor = System.Drawing.Color.White;
             this.TabBackgroundColorPanel.Controls.Add(this.TextColorPanel);
             this.TabBackgroundColorPanel.Controls.Add(this.HighlightColorPanel);
-            this.TabBackgroundColorPanel.Location = new System.Drawing.Point(14, 14);
+            this.TabBackgroundColorPanel.Location = new System.Drawing.Point(28, 27);
+            this.TabBackgroundColorPanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TabBackgroundColorPanel.Name = "TabBackgroundColorPanel";
-            this.TabBackgroundColorPanel.Size = new System.Drawing.Size(245, 110);
+            this.TabBackgroundColorPanel.Size = new System.Drawing.Size(490, 212);
             this.TabBackgroundColorPanel.TabIndex = 46;
             this.TabBackgroundColorPanel.Click += new System.EventHandler(this.TabBackgroundColorPanel_Click);
             // 
@@ -1266,9 +1334,10 @@
             // 
             this.TextColorPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.TextColorPanel.ForeColor = System.Drawing.Color.White;
-            this.TextColorPanel.Location = new System.Drawing.Point(0, 29);
+            this.TextColorPanel.Location = new System.Drawing.Point(0, 56);
+            this.TextColorPanel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.TextColorPanel.Name = "TextColorPanel";
-            this.TextColorPanel.Size = new System.Drawing.Size(245, 80);
+            this.TextColorPanel.Size = new System.Drawing.Size(490, 154);
             this.TextColorPanel.TabIndex = 48;
             this.TextColorPanel.Tag = "";
             this.TextColorPanel.Text = resources.GetString("TextColorPanel.Text");
@@ -1278,18 +1347,19 @@
             // HighlightColorPanel
             // 
             this.HighlightColorPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            this.HighlightColorPanel.Location = new System.Drawing.Point(99, 5);
+            this.HighlightColorPanel.Location = new System.Drawing.Point(198, 10);
             this.HighlightColorPanel.Margin = new System.Windows.Forms.Padding(0);
             this.HighlightColorPanel.Name = "HighlightColorPanel";
-            this.HighlightColorPanel.Size = new System.Drawing.Size(47, 20);
+            this.HighlightColorPanel.Size = new System.Drawing.Size(94, 38);
             this.HighlightColorPanel.TabIndex = 4;
             this.HighlightColorPanel.Click += new System.EventHandler(this.panel20_Click);
             // 
             // separator6
             // 
-            this.separator6.Location = new System.Drawing.Point(12, 106);
+            this.separator6.Location = new System.Drawing.Point(24, 204);
+            this.separator6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.separator6.Name = "separator6";
-            this.separator6.Size = new System.Drawing.Size(504, 6);
+            this.separator6.Size = new System.Drawing.Size(1008, 6);
             this.separator6.TabIndex = 44;
             this.separator6.Text = "separator6";
             // 
@@ -1298,19 +1368,19 @@
             this.panel13.Controls.Add(this.panel15);
             this.panel13.Controls.Add(this.customLabel14);
             this.panel13.Controls.Add(this.panel17);
-            this.panel13.Location = new System.Drawing.Point(169, 6);
-            this.panel13.Margin = new System.Windows.Forms.Padding(7);
+            this.panel13.Location = new System.Drawing.Point(338, 12);
+            this.panel13.Margin = new System.Windows.Forms.Padding(14, 13, 14, 13);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(65, 90);
+            this.panel13.Size = new System.Drawing.Size(130, 173);
             this.panel13.TabIndex = 43;
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            this.panel15.Location = new System.Drawing.Point(35, 60);
+            this.panel15.Location = new System.Drawing.Point(70, 115);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(30, 30);
+            this.panel15.Size = new System.Drawing.Size(60, 58);
             this.panel15.TabIndex = 3;
             this.panel15.Click += new System.EventHandler(this.panel15_Click);
             // 
@@ -1318,9 +1388,10 @@
             // 
             this.customLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.customLabel14.ForeColor = System.Drawing.Color.Black;
-            this.customLabel14.Location = new System.Drawing.Point(-7, 0);
+            this.customLabel14.Location = new System.Drawing.Point(-14, 0);
+            this.customLabel14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel14.Name = "customLabel14";
-            this.customLabel14.Size = new System.Drawing.Size(79, 25);
+            this.customLabel14.Size = new System.Drawing.Size(158, 48);
             this.customLabel14.TabIndex = 37;
             this.customLabel14.Tag = "";
             this.customLabel14.Text = "Discord Dark";
@@ -1333,29 +1404,29 @@
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel17.Controls.Add(this.separator9);
             this.panel17.Controls.Add(this.panel18);
-            this.panel17.Location = new System.Drawing.Point(0, 25);
+            this.panel17.Location = new System.Drawing.Point(0, 48);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(60, 60);
+            this.panel17.Size = new System.Drawing.Size(118, 114);
             this.panel17.TabIndex = 2;
             this.panel17.Click += new System.EventHandler(this.panel17_Click);
             // 
             // separator9
             // 
-            this.separator9.Location = new System.Drawing.Point(0, 8);
+            this.separator9.Location = new System.Drawing.Point(0, 15);
             this.separator9.Margin = new System.Windows.Forms.Padding(0);
             this.separator9.Name = "separator9";
-            this.separator9.Size = new System.Drawing.Size(8, 6);
+            this.separator9.Size = new System.Drawing.Size(16, 6);
             this.separator9.TabIndex = 40;
             this.separator9.Text = "separator9";
             // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(62)))));
-            this.panel18.Location = new System.Drawing.Point(8, 8);
+            this.panel18.Location = new System.Drawing.Point(16, 15);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(51, 51);
+            this.panel18.Size = new System.Drawing.Size(102, 98);
             this.panel18.TabIndex = 39;
             this.panel18.Click += new System.EventHandler(this.panel18_Click);
             // 
@@ -1364,19 +1435,19 @@
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Controls.Add(this.customLabel12);
             this.panel5.Controls.Add(this.panel9);
-            this.panel5.Location = new System.Drawing.Point(92, 6);
-            this.panel5.Margin = new System.Windows.Forms.Padding(7);
+            this.panel5.Location = new System.Drawing.Point(184, 12);
+            this.panel5.Margin = new System.Windows.Forms.Padding(14, 13, 14, 13);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(65, 90);
+            this.panel5.Size = new System.Drawing.Size(130, 173);
             this.panel5.TabIndex = 42;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            this.panel8.Location = new System.Drawing.Point(35, 60);
+            this.panel8.Location = new System.Drawing.Point(70, 115);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(30, 30);
+            this.panel8.Size = new System.Drawing.Size(60, 58);
             this.panel8.TabIndex = 3;
             this.panel8.Click += new System.EventHandler(this.panel8_Click);
             // 
@@ -1384,9 +1455,10 @@
             // 
             this.customLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.customLabel12.ForeColor = System.Drawing.Color.Black;
-            this.customLabel12.Location = new System.Drawing.Point(-7, 0);
+            this.customLabel12.Location = new System.Drawing.Point(-14, 0);
+            this.customLabel12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel12.Name = "customLabel12";
-            this.customLabel12.Size = new System.Drawing.Size(79, 25);
+            this.customLabel12.Size = new System.Drawing.Size(158, 48);
             this.customLabel12.TabIndex = 37;
             this.customLabel12.Tag = "";
             this.customLabel12.Text = "Discord Light";
@@ -1399,29 +1471,29 @@
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.separator7);
             this.panel9.Controls.Add(this.panel12);
-            this.panel9.Location = new System.Drawing.Point(0, 25);
+            this.panel9.Location = new System.Drawing.Point(0, 48);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(60, 60);
+            this.panel9.Size = new System.Drawing.Size(118, 114);
             this.panel9.TabIndex = 2;
             this.panel9.Click += new System.EventHandler(this.panel9_Click);
             // 
             // separator7
             // 
-            this.separator7.Location = new System.Drawing.Point(0, 8);
+            this.separator7.Location = new System.Drawing.Point(0, 15);
             this.separator7.Margin = new System.Windows.Forms.Padding(0);
             this.separator7.Name = "separator7";
-            this.separator7.Size = new System.Drawing.Size(8, 6);
+            this.separator7.Size = new System.Drawing.Size(16, 6);
             this.separator7.TabIndex = 40;
             this.separator7.Text = "separator7";
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Location = new System.Drawing.Point(8, 8);
+            this.panel12.Location = new System.Drawing.Point(16, 15);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(51, 51);
+            this.panel12.Size = new System.Drawing.Size(102, 98);
             this.panel12.TabIndex = 39;
             this.panel12.Click += new System.EventHandler(this.panel12_Click);
             // 
@@ -1430,19 +1502,19 @@
             this.panel16.Controls.Add(this.panel10);
             this.panel16.Controls.Add(this.customLabel13);
             this.panel16.Controls.Add(this.panel11);
-            this.panel16.Location = new System.Drawing.Point(13, 6);
-            this.panel16.Margin = new System.Windows.Forms.Padding(7);
+            this.panel16.Location = new System.Drawing.Point(26, 12);
+            this.panel16.Margin = new System.Windows.Forms.Padding(14, 13, 14, 13);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(65, 90);
+            this.panel16.Size = new System.Drawing.Size(130, 173);
             this.panel16.TabIndex = 41;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
-            this.panel10.Location = new System.Drawing.Point(35, 60);
+            this.panel10.Location = new System.Drawing.Point(70, 115);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(30, 30);
+            this.panel10.Size = new System.Drawing.Size(60, 58);
             this.panel10.TabIndex = 3;
             this.panel10.Click += new System.EventHandler(this.panel10_Click);
             // 
@@ -1450,9 +1522,10 @@
             // 
             this.customLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.customLabel13.ForeColor = System.Drawing.Color.Black;
-            this.customLabel13.Location = new System.Drawing.Point(-7, 0);
+            this.customLabel13.Location = new System.Drawing.Point(-14, 0);
+            this.customLabel13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customLabel13.Name = "customLabel13";
-            this.customLabel13.Size = new System.Drawing.Size(79, 25);
+            this.customLabel13.Size = new System.Drawing.Size(158, 48);
             this.customLabel13.TabIndex = 37;
             this.customLabel13.Tag = "";
             this.customLabel13.Text = "Default";
@@ -1465,38 +1538,39 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.separator8);
             this.panel11.Controls.Add(this.panel14);
-            this.panel11.Location = new System.Drawing.Point(0, 25);
+            this.panel11.Location = new System.Drawing.Point(0, 48);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(60, 60);
+            this.panel11.Size = new System.Drawing.Size(118, 114);
             this.panel11.TabIndex = 2;
             this.panel11.Click += new System.EventHandler(this.panel11_Click);
             // 
             // separator8
             // 
-            this.separator8.Location = new System.Drawing.Point(0, 8);
+            this.separator8.Location = new System.Drawing.Point(0, 15);
             this.separator8.Margin = new System.Windows.Forms.Padding(0);
             this.separator8.Name = "separator8";
-            this.separator8.Size = new System.Drawing.Size(8, 6);
+            this.separator8.Size = new System.Drawing.Size(16, 6);
             this.separator8.TabIndex = 40;
             this.separator8.Text = "separator8";
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Location = new System.Drawing.Point(8, 8);
+            this.panel14.Location = new System.Drawing.Point(16, 15);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(51, 51);
+            this.panel14.Size = new System.Drawing.Size(102, 98);
             this.panel14.TabIndex = 39;
             this.panel14.Click += new System.EventHandler(this.panel14_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(118)))), ((int)(((byte)(138)))));
-            this.ClientSize = new System.Drawing.Size(690, 317);
+            this.ClientSize = new System.Drawing.Size(1380, 610);
             this.Controls.Add(this.controlBox1);
             this.Controls.Add(this.TabFixer);
             this.Controls.Add(this.BatchLinkButton);
@@ -1505,9 +1579,10 @@
             this.Controls.Add(this.MainTab);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(690, 317);
-            this.MinimumSize = new System.Drawing.Size(690, 317);
+            this.MaximumSize = new System.Drawing.Size(1380, 610);
+            this.MinimumSize = new System.Drawing.Size(1380, 610);
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

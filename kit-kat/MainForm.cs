@@ -1233,10 +1233,8 @@ namespace kit_kat
             // If Memory Patching
             if (mempatch)
             {
-
-                byte[] bytes = { 0x70, 0x47 };
-                Program.viewer.sendWriteMemPacket(0x0105AE4, 0x1a, bytes);
-                log("Memory Patch written!");
+                Program.viewer.DataReady += onMemPatchDataReady;
+                Program.viewer.sendReadMemPacket(0x0105AE4, 2, 0x1A);
 
             }
             else
@@ -1288,6 +1286,17 @@ namespace kit_kat
             DisconnectTimeout.Enabled = true;
             DisconnectTimeout.Start();
 
+        }
+
+        private void onMemPatchDataReady(object sender, DataReadyEventArgs dataReadyEventArgs)
+        {
+            UInt16 data = BitConverter.ToUInt16(dataReadyEventArgs.data, 0);
+
+            byte[] bytes = { 0x70, 0x47 };
+            Program.viewer.sendWriteMemPacket((data == 0x4620 ? (uint)0x0105B00 : (uint)0x0105AE4), 0x1a, bytes);
+
+            Program.viewer.DataReady -= onMemPatchDataReady;
+            log("Detected firm: " + (data == 0x4620 ? "11.4" : "<= 11.3") + Environment.NewLine + "Memory Patch applied !");
         }
         #endregion
         #region ValidateIP
