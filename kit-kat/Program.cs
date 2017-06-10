@@ -19,7 +19,6 @@ namespace kit_kat
         [STAThread]
         static void Main()
         {
-
             viewer = new NTR();
             ir = new NTR();
 
