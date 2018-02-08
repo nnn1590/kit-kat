@@ -174,7 +174,6 @@ namespace kit_kat
         #endregion
 
         // Variables
-        public bool mempatch = false;
         Socket s;
         sRequest ss;
         string[] PushFiles;
@@ -207,7 +206,7 @@ namespace kit_kat
             #endregion
 
             // If Auto-Connect is enabled
-            if (Settings.Default.AutoConnect == true) { mempatch = false; connect(Settings.Default.IPAddress, 8000); Program.viewer.sendEmptyPacket(5); }
+            if (Settings.Default.AutoConnect == true) { connect(Settings.Default.IPAddress, 8000); Program.viewer.sendEmptyPacket(5); }
 
         }
         #endregion
@@ -551,18 +550,7 @@ namespace kit_kat
         #region ConnectButton
         private void ConnectButton_Click(object sender, EventArgs e)
         {
-            if (ConnectButton.Text == "CONNECT") { mempatch = false; connect(Settings.Default.IPAddress, 8000); Program.viewer.sendEmptyPacket(5); } else { Program.viewer.disconnect(); }
-        }
-        #endregion
-        #region MemPatchButton
-        private void MemPatchButton_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("You are about to send a temporary patch that disables In-Game Online Services. Are you sure?", "Are You Sure?", MessageBoxButtons.YesNo);
-            if (dr == DialogResult.Yes)
-            {
-                mempatch = true;
-                connect(Settings.Default.IPAddress, 8000, false);
-            }
+            if (ConnectButton.Text == "CONNECT") { connect(Settings.Default.IPAddress, 8000); Program.viewer.sendEmptyPacket(5); } else { Program.viewer.disconnect(); }
         }
         #endregion
         #region PushButton
@@ -1229,74 +1217,50 @@ namespace kit_kat
         {
 
             ConnectButton.Text = "DISCONNECT";
-
-            // If Memory Patching
-            if (mempatch)
+            // Activate Remote Play
+            Program.viewer.sendEmptyPacket(901, (uint)Settings.Default.ScreenPriority << 8 | (uint)Settings.Default.PriorityFactor, (uint)Settings.Default.Quality, (uint)(Settings.Default.QOSValue * 1024 * 1024 / 8));
+                
+            #region Open NTRViewer
+            if (File.Exists(Path.Combine(Path.GetTempPath(), "NTRViewer.exe")))
             {
-                Program.viewer.DataReady += onMemPatchDataReady;
-                Program.viewer.sendReadMemPacket(0x0105AE4, 2, 0x1A);
+                try
+                {
+                    StringBuilder sb = new StringBuilder();
+                    sb.Append("-l " + Settings.Default.ViewMode.ToString() + " ");
+                    sb.Append("-t " + Settings.Default.tScale + " ");
+                    sb.Append("-b " + Settings.Default.bScale);
 
+                    ProcessStartInfo p = new ProcessStartInfo(Path.Combine(Path.GetTempPath(), "NTRViewer.exe"));
+                    p.Verb = "runas";
+                    p.Arguments = sb.ToString().Replace(',', '.');
+
+                    if (Settings.Default.ShowConsole == false)
+                    {
+                        p.UseShellExecute = false;
+                        p.CreateNoWindow = true;
+                    }
+
+                    Process.Start(p);
+                    log("Successfully Connected...\n\nWhitescreen? Disable Firewall and any Anti-Virus including Windows Defender.\nFirewall and Anti-Virus's are usually the cause of the White Screen of Death.", "logger", "Success");
+                }
+                catch (Exception err)
+                {
+                    log(err.Message, "logger", "Failed");
+                }
             }
             else
             {
-
-                // Activate Remote Play
-                Program.viewer.sendEmptyPacket(901, (uint)Settings.Default.ScreenPriority << 8 | (uint)Settings.Default.PriorityFactor, (uint)Settings.Default.Quality, (uint)(Settings.Default.QOSValue * 1024 * 1024 / 8));
-                
-                #region Open NTRViewer
-                if (File.Exists(Path.Combine(Path.GetTempPath(), "NTRViewer.exe")))
-                {
-                    try
-                    {
-                        StringBuilder sb = new StringBuilder();
-                        sb.Append("-l " + Settings.Default.ViewMode.ToString() + " ");
-                        sb.Append("-t " + Settings.Default.tScale + " ");
-                        sb.Append("-b " + Settings.Default.bScale);
-
-                        ProcessStartInfo p = new ProcessStartInfo(Path.Combine(Path.GetTempPath(), "NTRViewer.exe"));
-                        p.Verb = "runas";
-                        p.Arguments = sb.ToString().Replace(',', '.');
-
-                        if (Settings.Default.ShowConsole == false)
-                        {
-                            p.UseShellExecute = false;
-                            p.CreateNoWindow = true;
-                        }
-
-                        Process.Start(p);
-                        log("Successfully Connected...\n\nWhitescreen? Disable Firewall and any Anti-Virus including Windows Defender.\nFirewall and Anti-Virus's are usually the cause of the White Screen of Death.", "logger", "Success");
-                    }
-                    catch (Exception err)
-                    {
-                        log(err.Message, "logger", "Failed");
-                    }
-                }
-                else
-                {
-                    log("NTRViewer failed to extract, try downloading and running NTRViewer manually as an Administrator.", "logger");
-                }
-                #endregion
-
-                // Open Linked Batch File
-                if (Settings.Default.BatchFile != "") { Process.Start(Settings.Default.BatchFile); }
-
+                log("NTRViewer failed to extract, try downloading and running NTRViewer manually as an Administrator.", "logger");
             }
+            #endregion
+
+            // Open Linked Batch File
+            if (Settings.Default.BatchFile != "") { Process.Start(Settings.Default.BatchFile); }
 
             // Start Disconnect Timeout
             DisconnectTimeout.Enabled = true;
             DisconnectTimeout.Start();
 
-        }
-
-        private void onMemPatchDataReady(object sender, DataReadyEventArgs dataReadyEventArgs)
-        {
-            UInt16 data = BitConverter.ToUInt16(dataReadyEventArgs.data, 0);
-
-            byte[] bytes = { 0x70, 0x47 };
-            Program.viewer.sendWriteMemPacket((data == 0x4620 ? (uint)0x0105B00 : (uint)0x0105AE4), 0x1a, bytes);
-
-            Program.viewer.DataReady -= onMemPatchDataReady;
-            log("Detected firm: " + (data == 0x4620 ? "11.4" : "<= 11.3") + Environment.NewLine + "Memory Patch applied !");
         }
         #endregion
         #region ValidateIP

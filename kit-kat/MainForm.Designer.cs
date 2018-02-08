@@ -48,7 +48,6 @@
             this.ConnectButtonHelp = new kit_kat.MaterialButton();
             this.separator5 = new kit_kat.Separator();
             this.ConnectButton = new kit_kat.MaterialButton();
-            this.MemPatchButton = new kit_kat.MaterialButton();
             this.Push = new System.Windows.Forms.TabPage();
             this.customLabel6 = new kit_kat.CustomLabel();
             this.logger2 = new kit_kat.CustomLabel();
@@ -285,7 +284,6 @@
             this.CaptureCard.Controls.Add(this.ConnectButtonHelp);
             this.CaptureCard.Controls.Add(this.separator5);
             this.CaptureCard.Controls.Add(this.ConnectButton);
-            this.CaptureCard.Controls.Add(this.MemPatchButton);
             this.CaptureCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.CaptureCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CaptureCard.Location = new System.Drawing.Point(38, 2);
@@ -362,27 +360,11 @@
             this.ConnectButton.Location = new System.Drawing.Point(492, 12);
             this.ConnectButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ConnectButton.Name = "ConnectButton";
-            this.ConnectButton.Size = new System.Drawing.Size(262, 60);
+            this.ConnectButton.Size = new System.Drawing.Size(324, 60);
             this.ConnectButton.TabIndex = 4;
             this.ConnectButton.Text = "CONNECT";
             this.ConnectButton.UseVisualStyleBackColor = false;
             this.ConnectButton.Click += new System.EventHandler(this.ConnectButton_Click);
-            // 
-            // MemPatchButton
-            // 
-            this.MemPatchButton.BackColor = System.Drawing.Color.IndianRed;
-            this.MemPatchButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MemPatchButton.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MemPatchButton.ForeColor = System.Drawing.Color.Black;
-            this.MemPatchButton.Location = new System.Drawing.Point(754, 12);
-            this.MemPatchButton.Margin = new System.Windows.Forms.Padding(0);
-            this.MemPatchButton.Name = "MemPatchButton";
-            this.MemPatchButton.Size = new System.Drawing.Size(62, 60);
-            this.MemPatchButton.TabIndex = 5;
-            this.MemPatchButton.Tag = "Alert";
-            this.MemPatchButton.Text = "⚠";
-            this.MemPatchButton.UseVisualStyleBackColor = false;
-            this.MemPatchButton.Click += new System.EventHandler(this.MemPatchButton_Click);
             // 
             // Push
             // 
@@ -1637,7 +1619,6 @@
         private MaterialButton ConnectButtonHelp;
         private Separator separator5;
         private MaterialButton ConnectButton;
-        private MaterialButton MemPatchButton;
         private System.Windows.Forms.TabPage Push;
         private CustomLabel customLabel6;
         private CustomLabel logger2;
