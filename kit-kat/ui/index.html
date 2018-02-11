@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='Expires' content='-1'>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Angular -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.css">
+        <!-- Custom Dark Theme -->
+        <link rel="stylesheet" href="http://pragma.pw/DARK%20THEME/css/theme.css">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- CEFSharp Specific -->
+        <style>html{overflow:hidden!important}</style>
+    </head>
+    <body ng-app="app" id="bodytag" oncontextmenu="return false" ng-controller="mainctrl" style="background-color:#202225">
+        <div ng-cloak style="display:initial">
+            <div layout="column" layout-fill>
+                <div flex layout="row">
+                    <div layout="column" flex style="background:#202225">
+                        <div layout="row" layout-align="start center" id="control-box" style="background:#202225;color:white;height:29px;line-height:29px;transition:0.1s">
+                            <h5 ng-mousemove="formDrag()" style="margin-left:10px">kit-kat</h5>
+                            <h5 ng-mousemove="formDrag()" flex style="margin-left:10px" id="version">...</h5>
+                            <div id="helpButton" onclick="callbackObj.helpButton()" style="cursor:pointer;background-repeat:no-repeat;background-position:center center;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAM5JREFUSInt0jFKQ1EQheFBdyAiCAZs3I8rcRs2gRCrFEFt3YNrEAQlhYKQIkSwiPBiJXw2E3g8bC7cByne3wwc7sxfnBsxMFACjnGDV2zxggmOakpO8eF/3nFSSzRvHf7BU84ds1qidR5c4yyzET4zX9USfefBh07+mPlvLdEl7nDRys6xSdGyiqgjPcQVvlodTfsQXXd+3VvVL94SPe96wX0vkhQtUrQo3T0ofH8bEU1EzEtF+wnGaDDuW9RkR03pbmlHs4jY5hwY2HP+ANWqEOltlrYIAAAAAElFTkSuQmCC)"></div>
+                            <div id="minimizeButton" class="material-icons" onclick="callbackObj.minimizeButton()" style="cursor:pointer;display:flex;justify-content:center;line-height:1.7">remove</div>
+                            <div id="closeButton" class="material-icons" onclick="callbackObj.closeButton()" style="cursor:pointer;display:flex;justify-content:center;align-items:center">close</div>
+                        </div>
+                        <div flex>
+                            <div layout-fill layout-fill layout="column">
+                              <div layout="row" class="md-whiteframe-4dp" style="background:#2f3136;color:white;z-index:1" flex="nogrow">
+                                <div style="background:#42464d;font-size:0.9em;padding:0px 8px;z-index:1" layout="row" flex>
+                                  <md-input-container flex md-no-float style="padding:0;margin:0">
+                                    <input placeholder="IP Address..." ng-model="settings.ipAddress" style="color:rgba(255, 255, 255, 0.7);border:0">
+                                    <style>.md-errors-spacer{display:none;}</style>
+                                  </md-input-container>
+                                </div>
+                                <div>
+                                  <section layout="row" layout-align="center center">
+                                    <md-button class="md-primary md-raised noLeftBorders noRightBorders" style="line-height:2px;min-height:32px;max-height:32px;padding-left:12px;padding-right:12px" md-colors="{background: ((settings.ipAddress.length>0 && validateIp(settings.ipAddress)) ? 'blue' : 'grey')}" aria-label="Start Checking" ng-disabled="!(settings.ipAddress.length>0 && validateIp(settings.ipAddress))" ng-click="!settings.connected ? connectToNTR(settings.ipAddress) : disconnectFromNTR()" ng-bind="!settings.connected ? 'CONNECT' : 'DISCONNECT'"></md-button>
+                                  </section>
+                                </div>
+                              </div>
+                              <div flex layout="column" style="background:#36393e;color:rgba(255, 255, 255, 0.7);padding:12px">
+                                <div flex class="md-whiteframe-4dp" layout="column" style="background:#42464d">
+                                    <textarea ng-show="!settings.open" flex disabled style="color:white;resize:none;padding:8px;font-size:0.9em;line-height:1em;border-radius:2px;border:0;width:100%;background:#42464d" ng-bind="settings.log"></textarea>
+                                    <div ng-if="settings.open" flex style="padding:8px;overflow-y:scroll;overflow-x:hidden">
+                                        <md-checkbox ng-model="settings.ntr.autoConnect" ng-checked="settings.ntr.autoConnect" ng-change="storeSettings()" aria-label="Auto Connect" flex>Auto Connect on Launch?</md-checkbox>
+                                        <md-checkbox ng-model="settings.ntr.showConsole" ng-checked="settings.ntr.showConsole" ng-change="storeSettings()" aria-label="Show NTRViewer Console" flex>Show NTRViewer Console?</md-checkbox>
+                                        <md-input-container md-no-float>
+                                            <label>Top Screen Scale (0 = disabled)</label>
+                                            <input ng-model="settings.ntr.tScale" ng-change="storeSettings()" md-maxlength="3">
+                                        </md-input-container>
+                                        <md-input-container md-no-float>
+                                            <label>Bottom Screen Scale (0 = disabled)</label>
+                                            <input ng-model="settings.ntr.bScale" ng-change="storeSettings()" md-maxlength="3">
+                                        </md-input-container>
+                                        <md-input-container md-no-float>
+                                            <label>Screen Priority (1 = Top, 0 = Bottom)</label>
+                                            <input ng-model="settings.ntr.priority" ng-change="storeSettings()" md-maxlength="1">
+                                        </md-input-container>
+                                        <md-input-container md-no-float>
+                                            <label>Priority Factor</label>
+                                            <input ng-model="settings.ntr.priorityFactor" ng-change="storeSettings()" md-maxlength="1">
+                                        </md-input-container>
+                                        <md-input-container md-no-float>
+                                            <label>View Mode (1 = Vertical, 0 = Horizontal)</label>
+                                            <input ng-model="settings.ntr.viewMode" ng-change="storeSettings()" md-maxlength="1">
+                                        </md-input-container>
+                                        <md-input-container md-no-float>
+                                            <label>Quality</label>
+                                            <input ng-model="settings.ntr.quality" ng-change="storeSettings()" md-maxlength="2">
+                                        </md-input-container>
+                                        <md-input-container md-no-float>
+                                            <label>Quality of Service (QoS)</label>
+                                            <input ng-model="settings.ntr.QoS" ng-change="storeSettings()" md-maxlength="3">
+                                        </md-input-container>
+                                        <style>
+                                        md-input-container .md-input { color:white; }
+                                        md-input-container label { color:#bec5c1!important; }
+                                        md-input-container { width: 100%; }
+                                        </style>
+                                    </div>
+                                    <md-button class="md-primary md-raised noLeftBorders noRightBorders" style="line-height:2px;min-height:32px;max-height:32px;padding-left:12px;padding-right:12px;margin:0" md-colors="{background: 'blue'}" aria-label="Start Checking" ng-click="settings.open = !settings.open" ng-bind="!settings.open ? 'OPEN SETTINGS' : 'CLOSE SETTINGS'"></md-button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
+            <script src="main.js"></script>
+        </div>
+        <span ng-show="::false" style="color:white">AngularJS Failed to load.<br>This is an issue with your Internet.</span>
+    </body>
+</html>

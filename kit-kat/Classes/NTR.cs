@@ -69,13 +69,10 @@ namespace ntrbase
             DataReady?.Invoke(this, e);
         }
 
-        protected virtual void OnConnected(EventArgs e, bool Stream)
+        protected virtual void OnConnected(EventArgs e)
         {
-            if(Stream == true)
-            {
-                Connected?.Invoke(this, e);
-                isConnected = true;
-            }
+            Connected?.Invoke(this, e);
+            isConnected = true;
         }
 
         protected virtual void OnInfoReady(InfoReadyEventArgs e)
@@ -247,41 +244,50 @@ namespace ntrbase
             port = serverPort;
         }
         
-        public void connectToServer(bool Stream = true)
+        public void connectToServer()
         {
-            if (tcp != null)
+            if (tcp != null) disconnect();
+            tcp = new TcpClient { NoDelay = true };
+            try
             {
-                disconnect();
-            }
-            
-            tcp = new TcpClient();
-            tcp.NoDelay = true;
-            if (!tcp.ConnectAsync(host, port).Wait(2000))
-            {
-                if(Stream == true)
+                if (!tcp.ConnectAsync(host, port).Wait(2000))
                 {
-                    log("Make sure your using Boot NTR Selector and loading 3.4\n- Wi-Fi Adapter and Router might not be getting a strong enough connection,\n- IP Address could be incorrect (It changes every now and then),\n- 3DS and PC might not be connected to the same Network,\n- 3DS might not ACTUALLY be connected to the Internet\n(Some games disable Wi-Fi when you are in it to allow NFC - Pokemon, Zelda e.t.c).", "logger", "Failed to connect!");
-                } else {
-                    log("", "logger3", "Failed to connect!");
+                    log(
+                        "Failed!\n" +
+                        "● Make sure your using Boot NTR Selector and loading 3.6,\n" +
+                        "● Make sure you close out of FBI BEFORE you attempt to connect with Kit-Kat. If you clicked connect with FBI open, re-boot and start again.\n" +
+                        "● Wi-Fi Adapter and/or Router might not be getting a strong enough connection,\n" +
+                        "● IP Address could be incorrect (It changes every now and then),\n" +
+                        "● Windows Firewall, Windows Defender or an Anti-Virus/Anti-Malware could be blocking the connection. (e.x. MalwareBytes WebProtection Module),\n" +
+                        "● 3DS and PC might not be connected to the same Network,\n" +
+                        "● 3DS might not ACTUALLY be connected to the Internet (Some games disable Wi-Fi when you are in it to allow NFC - Pokemon, Zelda e.t.c)."
+                    );
+                }
+                else
+                {
+                    log("Connected to: " + host + ":" + port.ToString());
+                    currentSeq = 0;
+                    netStream = tcp.GetStream();
+                    heartbeatSendable = 1;
+                    packetRecvThread = new Thread(new ThreadStart(packetRecvThreadStart));
+                    packetRecvThread.Start();
+                    isConnected = true;
+                    OnConnected(null);
                 }
             }
-            else
+            catch (Exception)
             {
-                if(Stream == true)
-                {
-                } else
-                {
-                    log("", "logger3", "Successfully connected...");
-                }
-                currentSeq = 0;
-                netStream = tcp.GetStream();
-                heartbeatSendable = 1;
-                packetRecvThread = new Thread(new ThreadStart(packetRecvThreadStart));
-                packetRecvThread.Start();
-                isConnected = true;
-                OnConnected(null, Stream);
+                log(
+                    "Failed!\n" +
+                    "● Make sure your using Boot NTR Selector and loading 3.6,\n" +
+                    "● Make sure you close out of FBI BEFORE you attempt to connect with Kit-Kat. If you clicked connect with FBI open, re-boot and start again.\n" +
+                    "● Wi-Fi Adapter and/or Router might not be getting a strong enough connection,\n" +
+                    "● IP Address could be incorrect (It changes every now and then),\n" +
+                    "● Windows Firewall, Windows Defender or an Anti-Virus/Anti-Malware could be blocking the connection. (e.x. MalwareBytes WebProtection Module),\n" +
+                    "● 3DS and PC might not be connected to the same Network,\n" +
+                    "● 3DS might not ACTUALLY be connected to the Internet (Some games disable Wi-Fi when you are in it to allow NFC - Pokemon, Zelda e.t.c)."
+                );
             }
-
         }
 
         public void disconnect(bool waitPacketThread = true)
@@ -306,6 +312,7 @@ namespace ntrbase
             }
             tcp = null;
             isConnected = false;
+            log("Closed Connection...");
         }
 
         public void sendPacket(uint type, uint cmd, uint[] args, uint dataLen)
@@ -439,17 +446,17 @@ namespace ntrbase
                 return false;
         }
 
-        public delegate void logHandler(string msg, string c);
+        public delegate void logHandler(string msg);
         public event logHandler onLogArrival;
-        public void log(string msg, string c = "logger", string s = "")
+        public void log(string msg)
         {
             if (onLogArrival != null)
             {
-                onLogArrival.Invoke(msg, c);
+                onLogArrival.Invoke(msg);
             }
             try
             {
-                Program.mainform.BeginInvoke(Program.mainform.delLog, msg, c, s);
+                Program.mainform.BeginInvoke(Program.mainform.delLog, msg);
             }
             catch (Exception ex)
             {

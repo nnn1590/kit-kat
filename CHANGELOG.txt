@@ -1,0 +1,9 @@
+• v2.0.0.0
+- New UI re-design, everything is different!
+- No more themes, way too much work, and no one uses them.
+- Its now a Dark Theme as most people including myself prefers it.
+- This completely changes everything to do with kit-kat.
+- Its no longer a "toolkit". The main reason is I didnt want other users work, look like it was mine as I had it embed directly inside of SNIPR. If you want to use the old applications, a simple google search should have you sorted.
+- Its now JUST a Streamer. It has no other function. This allows me to stand down and properly focus on the streaming element.
+- Its now a lot longer and less wide. This makes a lot more sense for the design. Especially for the log.
+- The Auto-IP-Grabber has been REMOVED, this is because it is NOT greatly accurate and doesnt pick up all nintendo devices. It was missing the MAC address id's for a lot of nintendo type products and had ones for wiiu's. Once I find out the mac addys for the proper device family I will re-add it.

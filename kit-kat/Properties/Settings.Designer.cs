@@ -12,7 +12,7 @@ namespace kit_kat.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -20,18 +20,6 @@ namespace kit_kat.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("3DS IP Address")]
-        public string IPAddress {
-            get {
-                return ((string)(this["IPAddress"]));
-            }
-            set {
-                this["IPAddress"] = value;
             }
         }
         
@@ -109,78 +97,6 @@ namespace kit_kat.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("104, 118, 138")]
-        public global::System.Drawing.Color WindowColor {
-            get {
-                return ((global::System.Drawing.Color)(this["WindowColor"]));
-            }
-            set {
-                this["WindowColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("90, 184, 255")]
-        public global::System.Drawing.Color HighlightColor {
-            get {
-                return ((global::System.Drawing.Color)(this["HighlightColor"]));
-            }
-            set {
-                this["HighlightColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color IconColor {
-            get {
-                return ((global::System.Drawing.Color)(this["IconColor"]));
-            }
-            set {
-                this["IconColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("IndianRed")]
-        public global::System.Drawing.Color AlertColor {
-            get {
-                return ((global::System.Drawing.Color)(this["AlertColor"]));
-            }
-            set {
-                this["AlertColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
-        public global::System.Drawing.Color FontColor {
-            get {
-                return ((global::System.Drawing.Color)(this["FontColor"]));
-            }
-            set {
-                this["FontColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("90, 90, 90")]
-        public global::System.Drawing.Color DisabledColor {
-            get {
-                return ((global::System.Drawing.Color)(this["DisabledColor"]));
-            }
-            set {
-                this["DisabledColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string BatchFile {
             get {
@@ -229,85 +145,37 @@ namespace kit_kat.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool IRDebug {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string lastUpdate {
             get {
-                return ((bool)(this["IRDebug"]));
+                return ((string)(this["lastUpdate"]));
             }
             set {
-                this["IRDebug"] = value;
+                this["lastUpdate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string IPAddress {
+            get {
+                return ((string)(this["IPAddress"]));
+            }
+            set {
+                this["IPAddress"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool IRGamepad {
+        public bool updateSettings {
             get {
-                return ((bool)(this["IRGamepad"]));
+                return ((bool)(this["updateSettings"]));
             }
             set {
-                this["IRGamepad"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("A,S,N,M,H,F,T,G,W,Q,Z,X,Right,Left,Up,Down")]
-        public string IRKB {
-            get {
-                return ((string)(this["IRKB"]));
-            }
-            set {
-                this["IRKB"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1,2,4,8,16,32,64,128,256,512,1024,2048")]
-        public string IRGP {
-            get {
-                return ((string)(this["IRGP"]));
-            }
-            set {
-                this["IRGP"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color TabBackgroundColor {
-            get {
-                return ((global::System.Drawing.Color)(this["TabBackgroundColor"]));
-            }
-            set {
-                this["TabBackgroundColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
-        public global::System.Drawing.Color TitleColor {
-            get {
-                return ((global::System.Drawing.Color)(this["TitleColor"]));
-            }
-            set {
-                this["TitleColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("240, 240, 240")]
-        public global::System.Drawing.Color SeperatorColor {
-            get {
-                return ((global::System.Drawing.Color)(this["SeperatorColor"]));
-            }
-            set {
-                this["SeperatorColor"] = value;
+                this["updateSettings"] = value;
             }
         }
     }
