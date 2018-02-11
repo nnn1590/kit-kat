@@ -274,7 +274,6 @@ namespace kit_kat
             }
             else
             {
-                MessageBox.Show(currentVersion + "\n\n" + lastVersion);
                 if (int.Parse(currentVersion.Replace(".", "")) > int.Parse(lastVersion.Replace(".", "")))
                 {
                     ExecuteOnScope("window.clCurrv='v" + currentVersion + "';");
