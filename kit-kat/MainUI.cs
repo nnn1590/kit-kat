@@ -124,7 +124,7 @@ namespace kit_kat
             delLog = new LogDelegate(log);
             Program.viewer.Connected += onConnect;
             InitializeComponent();
-            ui = new ChromiumWebBrowser("file:///C:/Users/impra/Desktop/kit-kat/kit-kat/bin/x86/Debug/ui/index.html") { KeyboardHandler = new KeyboardHandler() };
+            ui = new ChromiumWebBrowser("file:///" + Directory.GetCurrentDirectory() + "/ui/index.html") { KeyboardHandler = new KeyboardHandler() };
             ui.RegisterJsObject("callbackObj", new mainFunctions());
             Controls.Add(ui);
             #region Once loaded
