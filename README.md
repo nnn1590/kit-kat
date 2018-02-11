@@ -1,8 +1,8 @@
 # kit-kat (Toolkit-kat)
 FREE Wireless Capture-card to stream your 3DS screen to your PC!
 
-## Insanely Outdated Screenshot
-![Screenshot](http://i.imgur.com/oGb3VcE.gif)
+## GIF Screenshot
+![Screenshot](https://i.imgur.com/p70wtvu.gif)
 
 # Download
 https://github.com/PR4GM4/kit-kat/releases/latest
