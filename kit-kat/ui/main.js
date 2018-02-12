@@ -57,7 +57,7 @@ function mainctrl($scope, $mdDialog, $http) {
     }
     $scope.storeSettings = function() {
         var ntr = $scope.settings.ntr;
-        callbackObj.storeSettings(ntr.autoConnect, ntr.showConsole, ntr.tScale.toString(), ntr.bScale.toString(), ntr.priority, ntr.priorityFactor, ntr.viewMode, ntr.quality, ntr.QoS);
+        callbackObj.storeSettings(ntr.autoConnect, ntr.showConsole, ntr.tScale.toString(), ntr.bScale.toString(), ntr.priority.toString(), ntr.priorityFactor.toString(), ntr.viewMode.toString(), ntr.quality.toString(), ntr.QoS.toString());
     }
 
 };

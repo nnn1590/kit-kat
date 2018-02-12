@@ -1,4 +1,7 @@
-• v2.0.0.0
+• v2.0.1 to v2.0.3
+- Bug Fixes
+
+• v2.0.0
 - New UI re-design, everything is different!
 - No more themes, way too much work, and no one uses them.
 - Its now a Dark Theme as most people including myself prefers it.

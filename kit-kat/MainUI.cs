@@ -372,17 +372,17 @@ namespace kit_kat
             }
             #endregion
             #region storeSettings
-            public void storeSettings(bool autoConnect, bool showConsole, string tScale, string bScale, int priority, int priorityFactor, int viewMode, int quality, int QoS)
+            public void storeSettings(bool autoConnect, bool showConsole, string tScale, string bScale, string priority, string priorityFactor, string viewMode, string quality, string QoS)
             {
                 Settings.Default.AutoConnect = autoConnect;
                 Settings.Default.ShowConsole = showConsole;
                 Settings.Default.tScale = tScale;
                 Settings.Default.bScale = bScale;
-                Settings.Default.ScreenPriority = priority;
-                Settings.Default.PriorityFactor = priorityFactor;
-                Settings.Default.ViewMode = viewMode;
-                Settings.Default.Quality = quality;
-                Settings.Default.QOSValue = QoS;
+                Settings.Default.ScreenPriority = int.Parse(priority);
+                Settings.Default.PriorityFactor = int.Parse(priorityFactor);
+                Settings.Default.ViewMode = int.Parse(viewMode);
+                Settings.Default.Quality = int.Parse(quality);
+                Settings.Default.QOSValue = int.Parse(QoS);
                 Settings.Default.Save();
             }
             #endregion
