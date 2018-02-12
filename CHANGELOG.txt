@@ -1,4 +1,7 @@
-• v2.0.1 to v2.0.3
+• v2.0.3
+- Fixed settings, due to type conversion errors it wasnt storing settings.
+
+• v2.0.1 to v2.0.2
 - Bug Fixes
 
 • v2.0.0
