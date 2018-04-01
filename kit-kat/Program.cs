@@ -58,6 +58,13 @@ namespace kit_kat
                 }
             }
             #endregion
+            #region Check for C++ 2013 x86
+            if (!File.Exists(@Environment.SystemDirectory + "/msvcp120.dll")) {
+                MessageBox.Show("C++ Redistributable 2013 x86 from Visual Studio 2013 is required and not currently installed.\n\nReady to install?\nPress OK and i'll bring you RIGHT to the official download page! (Please reboot your PC after installing. Required!)", "Missing Dependency!");
+                Process.Start("https://www.microsoft.com/en-ie/download/confirmation.aspx?id=40784&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1");
+                Process.GetCurrentProcess().Kill();
+            }
+            #endregion
             #region CEFSharp Library Loader
             CefLibraryHandle libraryLoader = new CefLibraryHandle(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"libs\libcef.dll"));
             Console.WriteLine($"Library is valid: {!libraryLoader.IsInvalid}");
